@@ -1,0 +1,108 @@
+/* Responsive fixes for both desktop and mobile */
+
+/* General responsive improvements */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+    
+    h1, h2 {
+        word-break: break-word;
+    }
+}
+
+/* Hero section responsive improvements */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 3rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Programs section responsive improvements */
+@media (max-width: 640px) {
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* About section responsive improvements */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        margin-top: 2rem;
+        height: 300px;
+    }
+}
+
+/* Utility classes for spacing adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Scroll to top button position for mobile */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Fixes for images on mobile */
+@media (max-width: 768px) {
+    .hero-image, .about-image img {
+        height: 100%;
+        object-position: center;
+    }
+}
+
+/* Container padding adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
